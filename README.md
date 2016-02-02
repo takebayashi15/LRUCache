@@ -13,10 +13,12 @@ SinatraによるWEBサーバとして動作し、JSONによるデータの通信
 コマンドの例：  
 `$curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"url":"http://www.sinatrarb.com/images/logo.png"}' http://localhost:4567/get`  
 結果：  
-{"url":"http://www.sinatrarb.com/images/logo.png","image_data":"(省 略)"}
+{"url":"http://www.sinatrarb.com/images/logo.png","image_data":"(省 略)"}  
+  
+`$ruby demo.rb` を実行すると、上記APIを実行しカレントディレクトリに"output"というファイルとして保存するプログラムを動かすことができます。
 
 ## ファイル構成  
-ファイルは5つあり、それぞれのファイルの簡単な説明は以下のとおりです。  
+ファイルは6つあり、それぞれのファイルの簡単な説明は以下のとおりです。  
 <table>
 <tr>
   <td>ファイル名</td>
@@ -41,5 +43,9 @@ SinatraによるWEBサーバとして動作し、JSONによるデータの通信
 <tr>
   <td>test_lru.rb</td>
   <td>lru.rbのユニットテスト</td>
+</tr>
+<tr>
+  <td>demo.rb</td>
+  <td>APIのテスト＆画像の保存デモ</td>
 </tr>
 </table>
